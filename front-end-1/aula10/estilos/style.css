@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+
+background-color: black;
+font-family: 'Roboto', sans-serif;
+margin: 72px 0;
+
+}
+
+header {
+
+background-image: url("https://blogmaladeviagem.com.br/wp-content/uploads/2018/04/Blog-Mala-de-Viagem-paris.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+}
+
+
+.banner {
+background-color: violet;
+box-sizing: border-box;
+height: 720px;
+width: 1280px;
+padding-bottom: 60px;
+text-align: center;
+
+
+}
+
+h1 {
+
+font-size: 50px;
+color: mediumvioletred;
+padding: 0;
+margin: 10px;
+
+}
+
+h2 {
+
+font-size: 30px;
+margin: 10px;
+
+}
+
+
+.bottom {
+
+background-color:deeppink;
+box-sizing: border-box;
+width: 70px;
+height: 40px;
+padding: 8px;
+border-radius: 12px;
+text-align: center;
+
+}
+
+a {
+
+color: beige;    
+
+}
