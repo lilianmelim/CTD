@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600;700;800&family=Urbanist:wght@100;300;400;500;700;900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+h1, h2, h3 {
+    font-family: 'Spectral', serif;
+
+}
+
+p {
+    font-family: 'Urbanist', sans-serif;
+    margin-top: 8px;
+    color:#252525;
+}
+
+h1 {
+    font-size: 100px;
+    margin: 0px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+a {
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 2px 6px #00000020;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nome-cidade{
+    margin-left: 32px;
+    margin-right: 40px;
+    margin-top: 9px;
+    text-align: center;
+    display: flex;
+}
+
+.nome-cidade p {
+    margin-left: 16px;
+    text-align: center;
+    font-size: 32px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.menu-item {
+    margin-left: 32px;
+    margin-top: 9px;
+    width: 120px;
+    text-align: center;
+    color:#252525;
+}
+
+.menu-item:hover {
+    font-weight: 700;
+}
+
+.banner-topo {
+    background-image: url('https://www.whatelsemag.com/wp-content/uploads/2018/12/What-Else-Mag-Lifestyle-Lugares-Vistas-Mais-Bonitas-De-Sao-Paulo-Cover-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 81px;
+    height: 80vh;
+}
+
+.texto-banner {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 32px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.texto-banner h1, .texto-banner h2{
+    color: #ffffff;
+}
+
+.texto-banner:hover {
+    transition: background-color 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.btn {
+    padding: 16px 32px;
+    margin-top: 32px;
+    border-radius: 8px;
+    color: white;
+    background-color: #8f0000;
+    border: none;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    width: 50%;
+}
+
+.btn:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    background-color: #610000;
+}
+
+.animacao {
+    margin-top: 32px;
+    display: block;
+    height: 64px;
+    position: relative;
+    animation-name: texto-inicial;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-weight: 500;
+    font-size: 24px;
+    color: #e62626;
+    z-index: 1;
+}
+
+@keyframes texto-inicial {
+    0%   {top:0px;}
+    50%  {top:15px;}
+    100% {top:0px;}
+  }
+
+  .texto-banner:hover .animacao {
+    text-shadow: 0px 0px 10px #000000;
+    transition: all 0.1s ease-in-out;
+}
+
+.container-conteudo {
+    padding: 64px 80px;
+    color: #2c2c2c;
+}
+
+.secao-1{
+    display: block;
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+    padding: 16px;
+}
+
+blockquote {
+    font-family: 'Spectral', serif;
+    font-weight: 300;
+}
+
+.origem-quote{
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.secao-2 {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.texto-2 {
+    width: 45%;
+    float: left;
+}
+
+.secao-2 img{
+    height: 50vh;
+    width: 50%;
+    object-fit: cover;
+    float: right;
+}
+
+.secao-3{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.video{
+    width: 100%;
+}
+
+.container-adicional{
+    background-color: rgb(234 234 234);
+}
+
+.banner-fim{
+    background-image: url('https://www.whatelsemag.com/wp-content/uploads/2018/12/What-Else-Mag-Lifestyle-Lugares-Vistas-Mais-Bonitas-De-Sao-Paulo-Cover-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30vh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.texto-banner-fim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.secao-4 {
+    padding: 64px 80px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.texto-4 {
+    list-style: inside;
+    font-family: 'Urbanist', sans-serif;
+    float: right;
+    width: 45%;
+}
+
+.secao-4 img{
+    height: 50vh;
+    width: 50%;
+    object-fit: cover;
+    float: left;
+}
+
+li {
+    margin-top: 16px;
+}
+
+footer {
+        background-color: #2c2c2c;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 64px 32px;
+        text-align: center;
+        justify-content: space-between;
+        font-size: 16px;   
+}
+
+.midia-footer {
+    height: 30px;
+}
+
+.footer-item{
+    margin-left: 32px;
+    margin-top: 9px;
+    width: auto;
+    text-align: center;
+    color:#ffffff;
+}
+
+footer p{
+    color: #fff;
+}
+
+.texto-footer{
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}

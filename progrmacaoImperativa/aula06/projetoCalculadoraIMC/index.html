@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <!-- Carlos Alberto Filho; Tatiana Almeida, Lilian Melim, Pauilo Alexandre e Nuno Marinho-->
+    <!-- Grupo 5 -->
+</head>
+<body>
+    <script>
+        // Nome
+        var nome = prompt("Qual é o seu nome? ");
+
+        //Idade
+        var idade = prompt("Qual a sua idade? ");
+
+        //altura
+        var altura = prompt("Qual a sua altura? ");
+
+        //peso
+        var peso = prompt("Qual peso? ");
+
+        function calcularIMC(peso, altura)
+        {
+            return peso / (altura ** 2);
+        }
+
+        function classificacaoIMC(imc)
+        {
+            if (imc < 18.5 )
+            {
+                return "Magreza";
+            } else if (imc <= 24.9 )
+            {
+                return "Normal";
+            } else if (imc <= 29.9)
+            {
+                return "Sobrepeso";
+            } else if (imc <= 39.9)
+            {
+                return "Obesidade";
+            } else 
+            {
+                return "Obesidade Grave"
+            }
+        }
+
+        var resposta = "Prezado, "+ nome +" sua idade é "+ idade + ". Seu peso é ";
+        resposta += peso +". Sua classificação é: "+ classificacaoIMC(calcularIMC(peso, altura));
+        resposta += ". Seu IMC é: " + calcularIMC(peso, altura);
+
+        alert(resposta);
+    </script>
+</body>
+</html>
