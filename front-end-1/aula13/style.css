@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+
+*  {
+
+    padding: 10px;
+    margin: 0;
+}
+
+body, input, select, textarea, button {
+
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+
+
+img {
+
+    width: 100px;
+    z-index: 2;
+    position: relative;
+
+
+}
+
+h1{
+
+    font-size: 20px;
+    color: crimson;
+    z-index: 6;
+    position: relative;
+    left: 50px;
+
+}
+
+form {
+    
+    box-sizing: border-box;
+    width: 600px;
+    height: 650px;
+    z-index: 3;
+    position: relative;
+    font-size: 14px;
+    font-variant: ;
+    background-color: navajowhite;
+    border-radius: 20px;
+    border-color: navy;
+    border-style: solid;
+   
+}
+
+input {
+
+    padding: 5px 0 0 0;
+    border-radius: 12px;
+    border-style: dotted;
+    border-color: lightcoral;
+    background-color:rgb(209, 230, 236);
+    color: crimson;
+    text-align: center;
+
+}
+
+button {
+
+    width: 180px;
+    color: moccasin;
+    border-radius: 20px;
+    z-index: 4;
+    position: relative;
+    left: calc(50%-120px);
+    margin-top: 20px;
+    margin-left: 80px;
+
+}
+
+#reset{
+
+    background-color: rgb(241, 62, 42);
+
+
+}
+
+#submit{
+
+    background-color: seagreen;
+
+}
