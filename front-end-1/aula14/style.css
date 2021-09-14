@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
 
+/*
+colors: #D996A2 rosa claro
+        #BF567D rosa mais forte
+        #9DA65D verde
+        #F2CA80 amarelo
+        #BF5050 vermelho
+*/
+
 *{
 
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -7,16 +15,11 @@
     padding: 0;
 }
 
-body {
-
-    background-color: lavenderblush;
-
-}
-
 
 header{
 
-    background-color: hotpink;
+    background-color:#F2BDC7;
+
 
 }
 
@@ -26,5 +29,35 @@ header img {
     height: 150px;
     position: relative;
     left: 45%;
+
+}
+
+body {
+
+    background-color: #C2E0F2;
+
+}
+
+h1 {
+
+    color: #BF5050;
+    padding: 10px;
+    text-align: center;
+
+}
+
+form {
+
+    height: fit-content;
+    width: 600px;
+    
+    
+}
+
+legend {
+
+    color: #879140;
+    font-size: 24px;
+    text-align: left; 
 
 }
