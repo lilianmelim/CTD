@@ -24,35 +24,86 @@
             <h1><strong>Bonjour! Para começar, faça seu cadastro</strong></h1>
         </div>
 
-        <div>
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name">
-        </div>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
 
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email">
-        </div>
-       
-        <div>
-            <label for="socialNumber">CPF</label>
-            <input type="tex" id="socialNumber" name="socialNumber">
-        </div>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name">
+            </div>
 
-        <div>
-            <label for="birthDate">Data de nascimento</label>
-            <input type="date" id="birthDate" name="birthDate">
-        </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+        
+            <div>
+                <label for="socialNumber">CPF</label>
+                <input type="tex" id="socialNumber" name="socialNumber">
+            </div>
 
-        <div>
-            <label for="city">Cidade</label>
-            <select type="" id="city" name="city">
-                <option value="saoPaulo">São Paulo</option>
-                <option value="rioDeJaneiro">Rio de Janeiro</option>
-                <option value="beloHorizonte">Belo Horizonte</option>
-                <option value="salvador">São Paulo</option>
+            <div>
+                <label for="birthDate">Data de nascimento</label>
+                <input type="date" id="birthDate" name="birthDate">
+            </div>
+
+            <div>
+                <input type="radio">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Localização</legend>
+            <div>
+                <label for="city">Cidade</label>
+                <select type="" id="city" name="city">
+
+                
+                <optgroup>
+                    <label>Sul</label>
+                        <option value="saoPaulo">São Paulo</option>
+                        <option value="rioDeJaneiro">Rio de Janeiro</option>
+                        <option value="beloHorizonte">Belo Horizonte</option>
+                        <option value="salvador">Salvador</option>
+                </optgroup>
+
+                <optgroup>
+                    <label>Norte</label>
+                        <option value="saoPaulo">São Paulo</option>
+                        <option value="rioDeJaneiro">Rio de Janeiro</option>
+                        <option value="beloHorizonte">Belo Horizonte</option>
+                        <option value="salvador">Salvador</option>
+                </optgroup>
+
+                
             </select>
         </div>
+            <label for="states">Estados</label>
+            <select name="states" id="states">
+                
+                <option value="saoPaulo">São Paulo</option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="saoPaulo">São Paulo</option> 
+
+
+            </select>
+        <div>
+
+
+        </div>
+
+
+        </fieldset>
+
+       
+
+        
+
+        <fieldset> 
+
+            <legend>Senha</legend>
 
         <div>
             <label for="senha">Senha</label>
@@ -65,7 +116,9 @@
         </div>
 
         <button type="reset" id="reset">Limpar</button>
-        <button type="submit" id="submit">Salvar</button>        
+        <button type="submit" id="submit">Salvar</button>  
+        </fieldset>
+              
 
     </form>
 

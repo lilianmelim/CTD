@@ -37,7 +37,7 @@ form {
     
     box-sizing: border-box;
     width: 600px;
-    height: 650px;
+    height: fit-content;
     z-index: 3;
     position: relative;
     font-size: 14px;
@@ -47,6 +47,12 @@ form {
     border-color: navy;
     border-style: solid;
    
+}
+
+legend{
+
+    font-style: italic;
+
 }
 
 input {

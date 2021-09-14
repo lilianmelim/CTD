@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://static.wixstatic.com/media/33f42f_8ce19224c4a44c0eb6967724be0f7fb3~mv2.png/v1/fill/w_1200,h_1200,al_c/33f42f_8ce19224c4a44c0eb6967724be0f7fb3~mv2.png" alt="logo.png">
+        </div>
+    </header>
+    
+    <h1>
+    Olá! Fique à vontade e faça seu pedido.
+    </h1>
+
+    <form action="">
+
+
+        <fieldset>
+            <legend>O que adoçará seu dia hoje?</legend>
+            <!-- 
+            1- lista de opções
+            2 - Quandtidade
+            -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Para quando é seu pedido?</legend>
+            <!-- data -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Precisamos de alguma informações sobre você</legend>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Onde entregaremos?</legend>
+            <div>
+                <label for="adress">Endereço</label>
+                <input type="text" id="adress" name="adress">
+            </div>
+
+            <div>
+                <label for="city">Cidade</label>
+                <input required type="search" list="citys" name="city" id="city">
+                <datalist id="citys">
+                    <option value="São Paulo">
+                    <option value="São Roque">
+                    <option value="São Paulo">
+                    <option value="São Roque">
+                    <option value="São Paulo">
+                    <option value="São Roque">
+                </datalist>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>É um presente?</legend>
+                <input type="radio" name="gift" id="gift">
+                <label for="gift">Sim</label>
+                <input type="radio" name="option" id="nogift">
+                <label for="nogift">Não</label>
+
+
+            <!-- radio -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Como você prefere pagar?</legend>
+            <!-- métodos de pagamento -->
+        </fieldset>
+
+    </form>
+
+
+    
+
+
+
+</body>
+</html>
