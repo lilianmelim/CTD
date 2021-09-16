@@ -1,0 +1,90 @@
+* { 
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes shake {
+
+    25% {
+
+        transform: translate(-20px);
+
+    }
+
+    75% {
+
+        transform: translate(20px);
+
+    }
+    
+}
+
+
+@keyframes float {
+    
+    0% {
+
+        opacity: 0%;
+
+    }
+
+    50% {
+
+        opacity: 1;
+        transform:translate(20px);
+        font-size: 120px;
+
+    }
+
+    100% {
+
+
+        opacity: 0%;
+    }
+
+        
+
+    
+
+}
+
+button {
+
+    border: none;
+    padding: 12px 32px;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, transform;
+    margin: 100px auto;
+    display: block;
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-timing-function: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+div{
+
+    text-align: center;
+    font-size: 72px;
+    animation-name: float;
+    animation-duration: 2.5s;
+    animation-timing-function: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+
+/* button:hover {
+
+    color: white;
+    background-color: deeppink;
+    transform: scale(1.5) skew(20deg) rotate(360deg);
+    transform-origin: bottom right;
+
+} */

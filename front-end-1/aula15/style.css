@@ -1,0 +1,39 @@
+
+* {
+    outline: none;
+
+
+}
+
+button:hover {
+
+    padding: 12px;
+
+}
+
+input:focus {
+
+    background-color: hotpink;
+}
+
+
+input:disabled {
+
+    background-color: gray;
+}
+
+.hover-container:hover input {
+
+    display: block;
+
+}
+
+input:valid {
+
+    border: 1px solid green;
+}
+
+input:invalid {
+
+    border: 1px solid red;
+}
