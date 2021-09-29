@@ -1,0 +1,7 @@
+
+
+.main-caroussel .caroussel-item {
+
+    height: 100vh;
+    object-fit: cover;
+}

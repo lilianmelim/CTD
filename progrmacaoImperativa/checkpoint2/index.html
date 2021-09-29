@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint2</title>
+</head>
+<body>
+    <!-- Checkpoint 2 - Programação imperativa - Lílian Melim -->
+    
+    <script type="text/javascript">
+    
+        function produto(nome, valor, qualidade, status) {
+            return {
+                nome: nome,
+                valor: valor,
+                qualidade: qualidade, //número de 0 a 10
+                status: status //true: disponível no estoque
+            }
+        }
+        
+        var produtos = [
+            produto("produto1", 400, 7, true),
+            produto("produto2", 1000, 8, true),
+            produto("produto3", 2000, 10, true),
+            produto("produto4", 780, 10, false),
+            produto("produto5", 1000, 7, false),
+            produto("produto6", 550, 9, true),
+            produto("produto7", 1600, 10, true),
+            produto("produto8", 390, 10, false)
+        ];
+
+        var carrinho = produtos.filter(produto => produto.valor >= 482 && produto.valor <=1600 && produto.qualidade > 6 && produto.status == true)
+        carrinho.forEach(produto => {
+            console.log(produto.nome, produto.valor)
+        })
+
+        var total = carrinho.reduce(getTotal, 0);
+        function getTotal(total, item) {
+            return total + item.valor;
+        }
+
+        console.log(total);
+
+    </script>
+</body>
+</html>
